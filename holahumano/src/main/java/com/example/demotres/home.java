@@ -14,19 +14,22 @@ public class home {
 	@RequestMapping("/")
 	public String salute(@RequestParam(value="name", required=false) String name, @RequestParam(value="lastname", required=false) String lastname) {
 		String response;
-		StringBuffer sb = new StringBuffer("<a href='/'>VOLVER</a>");		
-		sb.append("<h1>Hola! ");
+		StringBuffer sb = new StringBuffer("<h1>Hola! ");	
+		
+		
 		
 		if(name == null) {
-			sb.append("humano");
+			sb.append("humano</h1>");
 		} else if(lastname == null){
-			sb.append(name);
+			sb.append(name + "</h1>");
+			sb.append("<a href='/'>VOLVER</a>");
 		}	else {
 			sb.append(name);
 			sb.append(" ");
-			sb.append(lastname);
+			sb.append(lastname + "</h1>");
+			sb.append("<a href='/'>VOLVER</a>");
 		}
-		sb.append("</h1>");
+		
 		response = sb.toString();			
 		return response;
 	}
