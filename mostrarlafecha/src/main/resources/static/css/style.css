@@ -1,0 +1,19 @@
+.margin{
+	margin-top: 3rem;
+}
+
+.dateh1{
+	color:blue;
+	border:1px solid black;
+	display:inline-block;
+}
+.timeh1{
+	color:green;
+	border:1px solid blue;
+	display:inline-block;
+}
+.homeh1{
+	color: #808000;
+	border:1px solid black;
+	display:inline-block;
+}
