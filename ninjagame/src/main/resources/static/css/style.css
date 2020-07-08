@@ -1,0 +1,6 @@
+.locations{
+	display: inline-block; 
+	min-height : 100px;
+	min-widht: 75px;
+	border: 1px solid black; 
+}
